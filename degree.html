@@ -1,0 +1,221 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Highest Qualification</title>
+    <style>
+            h1{  
+                text-align: center;
+                background-color: rgb(126, 187, 198);
+            }
+            .mt{
+                margin-top: 70px;
+            }
+            .shadow1{
+                box-shadow: 0px 0px 20px black;
+                /* box-decoration-break: slice 0px 0px 30px red; */
+            }
+            .ctr{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .c1 {
+                background-color: #166775;
+                color: white;
+                text-align: center;
+                padding: 5px;
+                margin-top: 100px;
+                border: 3px solid black;
+                height: 200px;
+                
+            }
+            .id{
+                border: 2px solid black;
+                height: 900px;
+                margin-bottom: 20px;
+            } 
+            /* .id2{
+                border: 3px solid black;
+                height: 250px;
+            }  */
+            .id3{
+                margin-top: 2px;
+                height: auto;
+            }  
+    </style>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+</head>
+<body>
+    <script>
+        function Validation(){
+                 var name1 = document.myform.class1.value;
+                 var special3 = document.myform.special3.value;
+                 var lang1 = document.myform.lang1.value;
+                 if(name1 == null || name1 == ""){
+                    alert("Highest Qualification Required...")
+                 }
+                 else if(special1 == null || special1 == ""){
+                    alert("Specialist also required...")
+                 }
+                 else if(lang1 == null || lang1 == ""){
+                    alert("language required...")
+                 }
+                 else{
+                    alert("Form submitted successfully...")
+                 }
+                }
+                
+                
+    </script>
+    <div class="container mt shadow1">
+        <div class="job-form c1">
+            <header>
+              <h2> Find Jobs </h2>
+            </header>
+            <br>
+            <form>
+              <label for="location">Location:</label>
+              <input type="text" id="location" name="location">
+              <br><br>
+              <label for="classification">Classification:</label>
+              <select id="classification" name="classification">
+                <option value="full-time">Full Time</option>
+                <option value="part-time">Part Time</option>
+                <option value="contract">Contract</option>
+              </select>
+              <br>
+            </form> 
+            <br> 
+        </div>
+        <br>    
+        <div class="row id">
+            <div>
+                <h1>Personal Detail</h1>
+                <form action="" method=" ">
+                    First Name:<input type="text" class="form-control" required>
+                    Middle Name:<input type="text" class="form-control">
+                    Last Name:<input type="text" class="form-control">
+                    Email id:<input type="text" class="form-control">
+                    contact No:<input type="text" class="form-control">
+                    collage:<input type="text" class="form-control">
+                    <br>
+               
+            </div>        
+               
+                <div>
+                    <h1>Educational details</h1>
+                    <br>
+                    <br>
+                    <form name="myform" action=" " method=" ">
+                        Highest Qualification:<select class="form-control" name="class1">
+                            <option>SELECT</option>
+                            <option>BSC</option>
+                            <option>BSC IT(bachelor of science information technology)</option>
+                            <option>BE(bachelor of Engineering)</option>
+                            <option>BTECH(bachelor of technology)</option>
+                            <option>BCA(bachelor of computer application)</option>
+                            <option>BSC-CS</option>
+                            <option>MSC IT</option>
+                            <option>MTECH</option>
+                            <option>MCA</option>
+                            <option>MSC-CS</option>
+                        </select>
+                        <br>
+                        Specialist:<select class="form-control" name="special3">
+                            <option>SELECT</option>
+                            <option>Database Adminstration</option>
+                            <option>Big Data Management</option>
+                            <option>Machin Learning</option>
+                            <option>Data Science Fundamentals</option>
+                            <option>Data Analysis with Python</option>
+                            <option>Data Entry Operater</option>
+                            <option>Big Data</option>
+                            <option>Data Analytics</option>
+                            <option>DataBase Architect</option>
+                            <option>Data Processing Executiive</option>
+                            <option>Data Engineering</option>
+                            <option>Cloud Computing</option>
+                            <option>Cloud Engineer</option>
+                            <option>Cloud Technology</option>
+                            <option>Cloud Platform</option>
+                            <option>Cloud Security</option>
+                            <option>Public Cloud</option>
+                            <option>Mobile Development</option>
+                            <option>Mobile Testing</option>
+                            <option>Website Manager</option>
+                            <option>Web Developer</option>
+                            <option>Web Application</option>
+                            <option>Web Designer</option>
+                            <option>Back-End Developer</option>
+                            <option>Backend Support Executiive</option>
+                            <option>Frontend Developer</option>
+                            <option>It Adminstration</option>
+                            <option>It Analyt</option>
+                            <option>It Consultant</option>
+                            <option>It Recruiter</option>
+                            <option>It Support Engineer</option>
+                            <option>Auto Mobile Engineering</option>
+                            <option>Network Security</option>
+                            <option>CyberSecurity</option>
+                            <option>Ethical hacking</option>
+                            <option>Cryptography</option>
+                            <option>CyberSecurity Risk Management</option>
+                            <option>CyberSecurity Law And Policy</option>
+                            <option>Game Design Fundamentals</option>
+                            <option>Game Programming</option>
+                            <option>Game Art And Design</option>
+                            <option>Game Narrative Design</option>
+                            <option>Game Development Capstone</option>
+                            <option>Game User Research</option>
+                            <option>Certitied Ethical Hacker(CEH)</option>
+                            <option>Penetration Testing</option>
+                            <option>Artificial Intelligence And Machine Learning in Finance</option> 
+                            <!-- <fieldset>
+    <select class="form-control" name="courses">
+    <legend>Select your courses</legend>
+    <input type="checkbox" id="course1" name="courses[]" value="course1">
+    <label for="course1">Course 1</label><br>
+    <input type="checkbox" id="course2" name="courses[]" value="course2">
+    <label for="course2">Course 2</label><br>
+    <input type="checkbox" id="course3" name="courses[]" value="course3">
+    <label for="course3">Course 3</label><br>
+    </select>
+</fieldset> -->
+                        </select>
+                        <br>
+                        Select Language:<select class="form-control" name="lang1">
+                            <option>SELECT</option>
+                            <option>JAVA</option>
+                            <option>PYTHON</option>
+                            <option>C</option>
+                            <option>C++</option>
+                            <option>JAVASCRIPT</option>
+                            <option>SWIFT</option>
+                            <option>SQL</option>
+                            <option>HTML</option>
+                            <option>CSS</option>
+                            <option>C#</option>
+                            <option>PHP</option>
+                            <option>OBJECTIVE-C</option>
+                            <option>RUST</option>
+                            <option>PERL</option>
+                            <option>TYPESCRIPT</option>
+                            <option>LUA</option>
+                            
+                        </select>
+                        
+                    </form>
+                </div>
+            
+            <div class="ctr id3">
+                <!-- <input type="submit" onclick="Validation()" name="submit" value="submit" class="btn btn-success "/>
+                <input type="reset" name="reset" value="reset" class="btn btn-danger "/> -->
+                <input type="submit" name="submit"  onclick="Validation()"   value="submit" class="btn btn-success "/>
+                <input type="reset" name="reset" value="reset" class="btn btn-danger "/>
+            </div> 
+        
+        
+        </div>
+        
+    </div>
+</body>
+</html>
